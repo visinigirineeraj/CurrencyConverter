@@ -99,8 +99,7 @@
 		A67851C3293CEAD200CC42CC /* CurrencyConvertor */ = {
 			isa = PBXGroup;
 			children = (
-				A67851C4293CEAD200CC42CC /* AppDelegate.swift */,
-				A67851C6293CEAD200CC42CC /* SceneDelegate.swift */,
+				A67851F4293CEAEF00CC42CC /* App */,
 				A67851C8293CEAD200CC42CC /* ViewController.swift */,
 				A67851CA293CEAD200CC42CC /* Main.storyboard */,
 				A67851CD293CEAD400CC42CC /* Assets.xcassets */,
@@ -125,6 +124,15 @@
 				A67851E7293CEAD500CC42CC /* CurrencyConvertorUITestsLaunchTests.swift */,
 			);
 			path = CurrencyConvertorUITests;
+			sourceTree = "<group>";
+		};
+		A67851F4293CEAEF00CC42CC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A67851C6293CEAD200CC42CC /* SceneDelegate.swift */,
+				A67851C4293CEAD200CC42CC /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
