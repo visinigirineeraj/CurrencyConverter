@@ -16,6 +16,17 @@
 		A67851DC293CEAD500CC42CC /* CurrencyConvertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67851DB293CEAD500CC42CC /* CurrencyConvertorTests.swift */; };
 		A67851E6293CEAD500CC42CC /* CurrencyConvertorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67851E5293CEAD500CC42CC /* CurrencyConvertorUITests.swift */; };
 		A67851E8293CEAD500CC42CC /* CurrencyConvertorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67851E7293CEAD500CC42CC /* CurrencyConvertorUITestsLaunchTests.swift */; };
+		A67851F8293CEB5C00CC42CC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67851F7293CEB5C00CC42CC /* NetworkManager.swift */; };
+		A67851FF293CEB7300CC42CC /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67851FB293CEB7300CC42CC /* APIEndpoint.swift */; };
+		A6785204293CEBAA00CC42CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785203293CEBAA00CC42CC /* Constants.swift */; };
+		A6785229293CEC7600CC42CC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785223293CEC7500CC42CC /* Environment.swift */; };
+		A678522A293CEC7600CC42CC /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785225293CEC7500CC42CC /* NetworkOperation.swift */; };
+		A678522B293CEC7600CC42CC /* ParseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785226293CEC7500CC42CC /* ParseOperation.swift */; };
+		A678522C293CEC7600CC42CC /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785227293CEC7500CC42CC /* BaseOperation.swift */; };
+		A678522D293CEC7600CC42CC /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785228293CEC7500CC42CC /* Plist.swift */; };
+		A678522F293CEC8800CC42CC /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678522E293CEC8800CC42CC /* NetworkExecuter.swift */; };
+		A6785233293CECAC00CC42CC /* ConverterParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785231293CECAC00CC42CC /* ConverterParseResult.swift */; };
+		A6785234293CECAC00CC42CC /* ConverterEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,17 @@
 		A67851E1293CEAD500CC42CC /* CurrencyConvertorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConvertorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67851E5293CEAD500CC42CC /* CurrencyConvertorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertorUITests.swift; sourceTree = "<group>"; };
 		A67851E7293CEAD500CC42CC /* CurrencyConvertorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A67851F7293CEB5C00CC42CC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A67851FB293CEB7300CC42CC /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		A6785203293CEBAA00CC42CC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6785223293CEC7500CC42CC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A6785225293CEC7500CC42CC /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		A6785226293CEC7500CC42CC /* ParseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseOperation.swift; sourceTree = "<group>"; };
+		A6785227293CEC7500CC42CC /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		A6785228293CEC7500CC42CC /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		A678522E293CEC8800CC42CC /* NetworkExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
+		A6785231293CECAC00CC42CC /* ConverterParseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterParseResult.swift; sourceTree = "<group>"; };
+		A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterEndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +121,8 @@
 		A67851C3293CEAD200CC42CC /* CurrencyConvertor */ = {
 			isa = PBXGroup;
 			children = (
+				A6785222293CEC7500CC42CC /* MiddleWare */,
+				A67851F5293CEB4C00CC42CC /* NetworkLayer */,
 				A67851F4293CEAEF00CC42CC /* App */,
 				A67851C8293CEAD200CC42CC /* ViewController.swift */,
 				A67851CA293CEAD200CC42CC /* Main.storyboard */,
@@ -133,6 +157,79 @@
 				A67851C4293CEAD200CC42CC /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A67851F5293CEB4C00CC42CC /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A6785202293CEBAA00CC42CC /* Constants */,
+				A67851F9293CEB7300CC42CC /* EndPoints */,
+				A67851F6293CEB5C00CC42CC /* APIClient */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A67851F6293CEB5C00CC42CC /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A67851F7293CEB5C00CC42CC /* NetworkManager.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		A67851F9293CEB7300CC42CC /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				A6785230293CECAC00CC42CC /* ConverterEndPoint */,
+				A67851FA293CEB7300CC42CC /* Base */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		A67851FA293CEB7300CC42CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A67851FB293CEB7300CC42CC /* APIEndpoint.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A6785202293CEBAA00CC42CC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A6785203293CEBAA00CC42CC /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A6785222293CEC7500CC42CC /* MiddleWare */ = {
+			isa = PBXGroup;
+			children = (
+				A6785224293CEC7500CC42CC /* Operations */,
+				A6785223293CEC7500CC42CC /* Environment.swift */,
+				A6785228293CEC7500CC42CC /* Plist.swift */,
+				A678522E293CEC8800CC42CC /* NetworkExecuter.swift */,
+			);
+			path = MiddleWare;
+			sourceTree = "<group>";
+		};
+		A6785224293CEC7500CC42CC /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				A6785225293CEC7500CC42CC /* NetworkOperation.swift */,
+				A6785226293CEC7500CC42CC /* ParseOperation.swift */,
+				A6785227293CEC7500CC42CC /* BaseOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		A6785230293CECAC00CC42CC /* ConverterEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				A6785231293CECAC00CC42CC /* ConverterParseResult.swift */,
+				A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */,
+			);
+			path = ConverterEndPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +363,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A678522B293CEC7600CC42CC /* ParseOperation.swift in Sources */,
+				A67851F8293CEB5C00CC42CC /* NetworkManager.swift in Sources */,
 				A67851C9293CEAD200CC42CC /* ViewController.swift in Sources */,
 				A67851C5293CEAD200CC42CC /* AppDelegate.swift in Sources */,
+				A678522D293CEC7600CC42CC /* Plist.swift in Sources */,
+				A6785234293CECAC00CC42CC /* ConverterEndPoint.swift in Sources */,
+				A678522C293CEC7600CC42CC /* BaseOperation.swift in Sources */,
+				A6785229293CEC7600CC42CC /* Environment.swift in Sources */,
+				A678522A293CEC7600CC42CC /* NetworkOperation.swift in Sources */,
 				A67851C7293CEAD200CC42CC /* SceneDelegate.swift in Sources */,
+				A6785233293CECAC00CC42CC /* ConverterParseResult.swift in Sources */,
+				A67851FF293CEB7300CC42CC /* APIEndpoint.swift in Sources */,
+				A6785204293CEBAA00CC42CC /* Constants.swift in Sources */,
+				A678522F293CEC8800CC42CC /* NetworkExecuter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
