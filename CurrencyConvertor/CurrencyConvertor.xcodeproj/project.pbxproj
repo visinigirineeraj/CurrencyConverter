@@ -27,6 +27,8 @@
 		A678522F293CEC8800CC42CC /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678522E293CEC8800CC42CC /* NetworkExecuter.swift */; };
 		A6785233293CECAC00CC42CC /* ConverterParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785231293CECAC00CC42CC /* ConverterParseResult.swift */; };
 		A6785234293CECAC00CC42CC /* ConverterEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */; };
+		A6785239293CF4E400CC42CC /* AlertMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785237293CF4E400CC42CC /* AlertMessageProtocol.swift */; };
+		A678523A293CF4E400CC42CC /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6785238293CF4E400CC42CC /* LoaderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A678522E293CEC8800CC42CC /* NetworkExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
 		A6785231293CECAC00CC42CC /* ConverterParseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterParseResult.swift; sourceTree = "<group>"; };
 		A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterEndPoint.swift; sourceTree = "<group>"; };
+		A6785237293CF4E400CC42CC /* AlertMessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessageProtocol.swift; sourceTree = "<group>"; };
+		A6785238293CF4E400CC42CC /* LoaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		A67851C3293CEAD200CC42CC /* CurrencyConvertor */ = {
 			isa = PBXGroup;
 			children = (
+				A6785235293CF0A900CC42CC /* UI Layer */,
 				A6785222293CEC7500CC42CC /* MiddleWare */,
 				A67851F5293CEB4C00CC42CC /* NetworkLayer */,
 				A67851F4293CEAEF00CC42CC /* App */,
@@ -230,6 +235,23 @@
 				A6785232293CECAC00CC42CC /* ConverterEndPoint.swift */,
 			);
 			path = ConverterEndPoint;
+			sourceTree = "<group>";
+		};
+		A6785235293CF0A900CC42CC /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A6785236293CF4E400CC42CC /* Protocols */,
+			);
+			path = "UI Layer";
+			sourceTree = "<group>";
+		};
+		A6785236293CF4E400CC42CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A6785237293CF4E400CC42CC /* AlertMessageProtocol.swift */,
+				A6785238293CF4E400CC42CC /* LoaderProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,11 +393,13 @@
 				A6785234293CECAC00CC42CC /* ConverterEndPoint.swift in Sources */,
 				A678522C293CEC7600CC42CC /* BaseOperation.swift in Sources */,
 				A6785229293CEC7600CC42CC /* Environment.swift in Sources */,
+				A678523A293CF4E400CC42CC /* LoaderProtocol.swift in Sources */,
 				A678522A293CEC7600CC42CC /* NetworkOperation.swift in Sources */,
 				A67851C7293CEAD200CC42CC /* SceneDelegate.swift in Sources */,
 				A6785233293CECAC00CC42CC /* ConverterParseResult.swift in Sources */,
 				A67851FF293CEB7300CC42CC /* APIEndpoint.swift in Sources */,
 				A6785204293CEBAA00CC42CC /* Constants.swift in Sources */,
+				A6785239293CF4E400CC42CC /* AlertMessageProtocol.swift in Sources */,
 				A678522F293CEC8800CC42CC /* NetworkExecuter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
