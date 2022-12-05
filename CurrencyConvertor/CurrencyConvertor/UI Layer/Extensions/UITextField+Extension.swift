@@ -9,14 +9,14 @@ import UIKit
 import Combine
 
 extension UITextField {
-    
+
     var textPublisher: AnyPublisher<String, Never> {
         NotificationCenter.default
             .publisher(for: UITextField.textDidEndEditingNotification, object: self)
             .map { ($0.object as? UITextField)?.text  ?? "" }
             .eraseToAnyPublisher()
     }
-    
+
     func addToolBar() {
         let toolBar = UIToolbar()
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
@@ -25,7 +25,7 @@ extension UITextField {
         toolBar.sizeToFit()
         inputAccessoryView = toolBar
     }
-    
+
     @objc private func tapDone() {
         endEditing(true)
     }

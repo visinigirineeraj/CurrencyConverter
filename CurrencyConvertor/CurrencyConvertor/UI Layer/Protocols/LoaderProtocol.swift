@@ -10,19 +10,19 @@ import UIKit
 private var loaderCount = 0
 
 protocol LoaderProtocol: UIViewController {
-    
+
     var activityIndicator: UIActivityIndicatorView { get set }
 }
 
 extension LoaderProtocol {
-    
+
     func showLoader() {
         Task { @MainActor in
             loaderCount += 1
             activityIndicator.startAnimating()
         }
     }
-    
+
     func hideLoader() {
         Task { @MainActor in
             loaderCount -= 1

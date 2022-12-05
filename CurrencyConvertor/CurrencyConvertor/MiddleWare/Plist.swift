@@ -17,17 +17,17 @@ enum StorageType: String {
 }
 
 struct Plist<Value: Decodable> {
-    
+
     let data: Value
-    
+
     init(fileName: String, bundle: Bundle = Bundle.main) throws {
-        
+
         guard let path = bundle.path(forResource: fileName, ofType: StorageType.plist.rawValue) else { throw FileError.notFound }
-        
+
         let rawData = try Data(contentsOf: URL(fileURLWithPath: path))
-        
+
         let decoder = PropertyListDecoder()
-        
+
         data = try decoder.decode(Value.self, from: rawData)
     }
 }

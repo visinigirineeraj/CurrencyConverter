@@ -8,9 +8,9 @@
 import Foundation
 
 protocol APIEndpoint {
-    
+
     associatedtype InputType
-    
+
     var path: String { get }
     var method: HTTPMethod { get }
     var parameters: JSONObject? { get }
@@ -21,11 +21,11 @@ protocol APIEndpoint {
 }
 
 extension APIEndpoint {
-    
+
     var method: HTTPMethod {
         return .post
     }
-    
+
     var headers: HTTPHeaders {
         return ["Content-Type": "application/json"]
     }

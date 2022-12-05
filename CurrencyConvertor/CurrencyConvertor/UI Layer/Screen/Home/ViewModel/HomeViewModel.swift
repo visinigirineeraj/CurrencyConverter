@@ -9,21 +9,21 @@ import Foundation
 import Combine
 
 final class HomeViewModel {
-    
+
     var convertedCurrency: PassthroughSubject<Result<Double, Error>, Never> = PassthroughSubject()
     let currencyCodes = ["USD", "INR", "AUD", "SGD", "MYR", "HKD", "JPY", "AED", "ZWL"]
     var convertedCurrencies: [ConverterParseResult] = []
-    
+
     let conveterExecuter: CurrencyConverterExecuter
-    
+
     init(apiClient: NetworkManager) {
         conveterExecuter = CurrencyConverterExecuter(apiClient: apiClient)
     }
-    
-    func getGroupedCurrencies() -> [String: [ConverterParseResult]]{
+
+    func getGroupedCurrencies() -> [String: [ConverterParseResult]] {
         Dictionary(grouping: convertedCurrencies.sorted { ($0.info?.timestamp ?? 0) < ($1.info?.timestamp ?? 0)}, by: { $0.date ?? ""})
     }
-    
+
     func convert(inputCurrency: String, convertCurrency: String, inputAmount: String) {
         conveterExecuter.execute(input: ConverterInput(convertTo: convertCurrency, convertFrom: inputCurrency, amount: inputAmount)) { [weak self] parsedResult in
             if let result = parsedResult.result {

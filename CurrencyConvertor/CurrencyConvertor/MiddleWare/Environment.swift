@@ -8,11 +8,11 @@
 import Foundation
 
 struct Environment: Codable {
-    
+
     // MARK: Properties
     var baseUrl: String
     var apiKey: String
-    
+
     // MARK: - Public
     static func loadNetworkConfig() throws -> Environment {
         let plist = try Plist<Environment>(fileName: Constants.fileName)
@@ -23,7 +23,7 @@ struct Environment: Codable {
 // MARK: Constants
 
 private extension Environment {
-    
+
     struct Constants {
         static let fileName = "Environment"
     }

@@ -17,14 +17,14 @@ typealias Callback<Model: Any> = ((Model) -> Void)
 typealias CurrencyConverterExecuter = NetworkExecuter<ConverterEndPoint, ConverterParseResult>
 
 enum HTTPMethod: String {
-    
+
     case get = "GET"
     case post = "POST"
     case put = "PUT"
 }
 
 enum APIError: Error, LocalizedError {
-    
+
     case invalidServerResponse
     case unknown
     case runtimeError(String)

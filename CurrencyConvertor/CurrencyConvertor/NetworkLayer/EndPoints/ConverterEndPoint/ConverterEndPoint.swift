@@ -12,7 +12,7 @@ struct ConverterInput {
 }
 
 struct ConverterEndPoint: APIEndpoint {
-    
+
     typealias InputType = ConverterInput
 
     var parameters: JSONObject?
@@ -21,7 +21,7 @@ struct ConverterEndPoint: APIEndpoint {
     var method: HTTPMethod { .get }
 
     var path: String { "convert?to=\(input.convertTo)&from=\(input.convertFrom)&amount=\(input.amount)" }
-    
+
     init(input: ConverterInput) {
         self.input = input
     }

@@ -25,9 +25,8 @@ extension AlertMessagesProtocol {
             present(alertController, animated: true, completion: nil)
         }
     }
-    
+
     func showError(_ error: Error?) {
         showAlertwithTitle(title: "Error", message: error?.localizedDescription ?? "Unable to reach our servers. Please try again.")
     }
 }
-

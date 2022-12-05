@@ -8,9 +8,9 @@ import SwiftUI
 import Charts
 
 struct ChartView: View {
-    
+
     @State var dataSource: [(day: String, count: Int)]
-    
+
     var body: some View {
         if !dataSource.isEmpty {
             GroupBox("Currency statistics") {
@@ -29,7 +29,7 @@ struct ChartView: View {
 }
 
 struct ChartView_Previews: PreviewProvider {
-    
+
     static var previews: some View {
         ChartView(dataSource: [("Today", 23)])
     }
