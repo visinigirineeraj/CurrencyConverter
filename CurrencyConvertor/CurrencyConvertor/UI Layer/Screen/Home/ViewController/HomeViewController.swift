@@ -37,7 +37,9 @@ final class HomeViewController: UIViewController, AlertMessagesProtocol, LoaderP
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        guard let environmentConfig = try? Environment.loadNetworkConfig() else { fatalError("Environment config not found")}
+        self.viewModel = HomeViewModel(apiClient: NetworkManager(baseURL: environmentConfig.baseUrl, apiKey: environmentConfig.apiKey))
+
         initalSetup()
     }
     
